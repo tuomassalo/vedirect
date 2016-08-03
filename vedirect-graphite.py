@@ -4,7 +4,7 @@
 import serial
 import graphitesend, time
 
-g = graphitesend.init(prefix='sensors.inverter') # connects to localhost:2003
+g = graphitesend.init(prefix='sensors.inverter', graphite_server='127.0.0.1')
 
 
 class vedirect:
