@@ -98,10 +98,10 @@ def print_data_callback(data):
     out = dict()
 
     for k in ['V', 'I', 'VPV']:
-        out[k] = data[k]/1000
+        out[k] = float(data[k])/1000
 
     for k in ['H19', 'H20', 'H22']:
-        out[k] = data[k]/100
+        out[k] = float(data[k])/100
 
     for k in ['CS', 'ERR', 'H21', 'H23']:
         out[k] = data[k]
