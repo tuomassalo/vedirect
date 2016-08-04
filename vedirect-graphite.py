@@ -103,7 +103,7 @@ def print_data_callback(data):
     for k in ['H19', 'H20', 'H22']:
         out[k] = float(data[k])/100
 
-    for k in ['CS', 'ERR', 'H21', 'H23']:
+    for k in ['CS', 'ERR', 'H21', 'H23', 'P']:
         out[k] = data[k]
 
     g.send_dict(out)
